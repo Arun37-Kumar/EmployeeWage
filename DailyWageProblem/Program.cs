@@ -12,7 +12,7 @@ namespace DailyWageProblem
         {
             Console.WriteLine("Welcom to Employee Wage Problem");
             DailyWageCompute checkPresent = new DailyWageCompute();
-            checkPresent.isPresent();
+            checkPresent.EmployeeWageCalculations();
             Console.ReadLine();
         }
     }
