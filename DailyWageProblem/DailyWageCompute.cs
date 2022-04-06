@@ -8,7 +8,7 @@ namespace DailyWageProblem
 {
     internal class DailyWageCompute
     {
-        public void EmployeeWageCalculations()
+        public int EmployeeWageCalculations(string company, int empRatePerHour,int numOfWorkingDays,int maxHoursPerMonth)
         {
             const int IS_FULL_TIME = 1;
             const int IS_PART_TIME = 2;
@@ -20,9 +20,9 @@ namespace DailyWageProblem
             int empHrs = 0;
             int empWage = 0;
             int totalWage = 0;
-
+            
             Random random = new Random();
-
+            Console.WriteLine("Company : " + company);
             for (int days = 0; days < NUMBER_OF_WORKING_DAYS; days++)
             {
                 int empCheck = random.Next(0, 3);
@@ -48,7 +48,7 @@ namespace DailyWageProblem
                 Console.WriteLine("Emp Wage : {0}", empWage);
             }
             Console.WriteLine("Total Employee Wage : " + totalWage);
-
+            return totalWage;
         }
     }
 }
