@@ -11,6 +11,9 @@ namespace DailyWageProblem
         static void Main(string[] args)
         {
             Console.WriteLine("Welcom to Employee Wage Problem");
+            DailyWageCompute checkPresent = new DailyWageCompute();
+            checkPresent.isPresent();
+            Console.ReadLine();
         }
     }
 }
