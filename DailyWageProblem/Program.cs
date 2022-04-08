@@ -11,10 +11,12 @@ namespace DailyWageProblem
         static void Main(string[] args)
         {
             Console.WriteLine("Welcom to Employee Wage Problem");
-            DailyWageCompute company1 = new DailyWageCompute();
-            DailyWageCompute company2 = new DailyWageCompute();
-            company1.EmployeeWageCalculations("Reliance",20,2,10);
-            company2.EmployeeWageCalculations("DMart",20,4,10);
+            EmpWageBuilder Infosys = new EmpWageBuilder("Infosys",20,2,10);
+            EmpWageBuilder Reliance = new EmpWageBuilder("Reliance", 10, 4, 20);
+            Infosys.ComputeWage();
+            Console.WriteLine(Infosys.toString());
+            Reliance.ComputeWage();
+            Console.WriteLine(Reliance.toString());
             Console.ReadLine();
         }
     }
